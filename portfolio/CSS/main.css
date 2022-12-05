@@ -1,0 +1,299 @@
+
+
+@font-face {
+    font-family: 'waltograph';
+    src: url(/fonts/waltographUI.ttf);
+}
+
+@font-face {
+    font-family: 'typewriter';
+    src: url(/fonts/JMH\ Typewriter.ttf);
+}
+
+
+.bg-img {
+    background-image: url("../images/Web-Header-Background.svg");
+
+}
+
+.bg-custom {
+    background-color: #2a3147;
+}
+
+#full-page {
+    height: 100vh;
+}
+
+
+header, footer {
+    background-color: #2a3147;
+    height: 120px;
+}
+
+/* SOCIAL MEDIA  */
+#socials {
+    width: 50%;
+}
+
+.logo-svg{
+    width: 70px;
+    height: 70px;
+}
+
+.logo-svg-insta:hover {
+    fill: #E1306C;
+}
+
+.logo-svg-twitch:hover {
+    fill: white;
+}
+
+.logo-svg-link:hover {
+    fill: white;
+}
+
+.logo-svg-twitter {
+    stroke: #fff;
+    fill: transparent;
+}
+
+.logo-svg-twitter:hover {
+    fill: #1DA1F2;
+}
+
+.text-green {
+    color: #40b459;
+}
+
+span:hover {
+    color: #40b459;
+}
+
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    font-family: 'typewriter';
+}
+
+#presentation {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.typewriter {
+    position: relative;
+}
+
+.typewriter::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: #fff;
+    background-color: #2a3147;
+    width: 100%;
+    animation: typing 4s steps(40) forwards, line 1s infinite
+    
+}
+
+@keyframes typing {
+    to{
+        width: 0%;
+    }    
+}
+
+@keyframes line {
+    50% {
+        color: transparent;
+    }
+}
+
+.card {
+    width: 340px;
+    height: 607px;
+}
+
+.mail-icon {
+    width: 90px;
+    height: 90px;
+}
+
+.box-rainbow {
+    width: 340px;
+    height: 607px;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+
+}
+
+.box-rainbow::before, .box-rainbow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+    width: 100%;
+    height: 100%;
+    background-size: 500%;
+    z-index: -1;
+    transform: scale(1.02);
+    animation: animate 20s infinite;
+
+}
+
+.box-rainbow::after {
+    filter: blur(20px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300% 0;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+@media  (max-width: 768px) {
+
+    #main-title {
+        font-size: 30px;
+    }
+    
+    #second-title {
+        font-size: 20px;
+    }
+
+    .logo-svg {
+        width: 42px;
+        height: 42px;
+    }
+
+    a span {
+        font-size: 15px;
+    }
+
+    header, footer {
+        height: 85px;
+    }
+    
+}
+
+@media  (max-width: 623px) {
+
+    .logo-svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    a span {
+        font-size: 10px;
+    }
+
+    header, footer {
+        height: 70px;
+    }
+
+    #main-title {
+        font-size: 25px;
+    }
+    
+    #second-title {
+        font-size: 15px;
+    }
+}
+
+@media  (max-width: 439px) {
+
+    #main-title {
+        font-size: 20px;
+    }
+    
+    #second-title {
+        font-size: 15px;
+    }
+
+    .logo-svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    a span {
+        font-size: 10px;
+    }
+
+    header, footer {
+        height: 50px;
+    }
+    
+    .card {
+        width: 300px;
+        height: 550px;
+    }
+
+    .box-rainbow {
+        width: 300px;
+        height: 550px;
+    }
+    .mail-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    #presentation {
+        font-size: 13px;
+    }
+}
+
+
+@media  (max-width: 345px) {
+
+    #main-title {
+        font-size: 17px;
+    }
+    
+    #second-title {
+        font-size: 12px;
+    }
+
+    .logo-svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    a span {
+        font-size: 7px;
+    }
+
+    header, footer {
+        height: 34px;
+    }
+    
+    .card {
+        width: 220px;
+        height: 470px;
+    }
+
+    .box-rainbow {
+        width: 220px;
+        height: 470px;
+    }
+    .mail-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    #presentation {
+        font-size: 11px;
+    }
+
+    #my-name {
+        font-size: 15px;
+    }
+}
